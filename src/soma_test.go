@@ -16,6 +16,15 @@ func TestSoma_deveResultar7(t *testing.T) {
 	want := 7
 
 	if got != want {
-		t.Errorf("soma(3,3) \n got: %v \n want: %v \n", got, want)
+		t.Errorf("soma(3,4) \n got: %v \n want: %v \n", got, want)
+	}
+}
+
+func TestSoma_deveResultar13(t *testing.T) {
+	got := soma(9, 4)
+	want := 13
+
+	if got != want {
+		t.Errorf("soma(9,4) \n got: %v \n want: %v \n", got, want)
 	}
 }
