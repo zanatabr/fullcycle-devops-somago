@@ -1,0 +1,4 @@
+steps:
+
+- id: "Execução dos testes unitários"
+  args: ['go', 'test', '.']
