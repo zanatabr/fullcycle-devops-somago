@@ -1,5 +1,9 @@
 steps:
 
 - id: "Execução dos testes unitários"
-  name: golang
+  name: 'golang'
   args: ['go', 'test', './src']
+
+- id: "Build da imagem Docker"
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/dfdx/somago', '.']

@@ -6,7 +6,7 @@ ENV GO111MODULE=on \
 WORKDIR /build
 
 # Copia o código necessário para o build da aplicação
-COPY . .
+COPY ./src .
 
 # Build da aplicação
 RUN go build soma.go
