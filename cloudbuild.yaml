@@ -1,4 +1,5 @@
 steps:
 
 - id: "Execução dos testes unitários"
+  name: golang
   args: ['go', 'test', '.']
