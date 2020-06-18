@@ -7,3 +7,7 @@ steps:
 - id: "Build da imagem Docker"
   name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/dfdx/somago', '.']
+
+- id: "Push da imagem Docker"
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/dfdx/somago']
